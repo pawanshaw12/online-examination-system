@@ -265,7 +265,7 @@ echo '</table></div></div>';}
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-        <h4 class="modal-title" style="font-family:'typo' "><span style="color:orange">Developers</span></h4>
+        <h4 class="modal-title" style="font-family:'typo' "><span style="color:#03a9f4">Developers</span></h4>
       </div>
 	  
       <div class="modal-body">
@@ -292,7 +292,7 @@ echo '</table></div></div>';}
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-        <h4 class="modal-title"><span style="color:orange;font-family:'typo' ">LOGIN</span></h4>
+        <h4 class="modal-title"><span style="color:#03a9f4;font-family:'typo' ">LOGIN</span></h4>
       </div>
       <div class="modal-body title1">
 <div class="row">
