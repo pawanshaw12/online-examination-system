@@ -25,20 +25,58 @@ var b = document.forms["form"]["cpassword"].value;if (a!=b){alert("Passwords mus
 
 </head>
 
-<body>
-<div class="header">
-<div class="row">
-<div class="col-lg-6">
-<span class="logo">Online Examination System</span></div>
-<div class="col-md-2 col-md-offset-4">
-<a href="#" class="pull-right btn sub1" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-log-in" aria-hidden="true"></span>&nbsp;<span class="title1"><b>Signin</b></span></a></div>
+<body id="pagetop">
+ 
+<nav class="navbar navbar-default navbar-fixed-top navbar-shrink">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll " style="font-weight: 1000px" href="#page-top">ONLINE EXAMINATION SYSTEM</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden active">
+                        <a href="#page-top"></a>
+                    </li>
+                     <li class="">
+                        <a class="page-scroll" href="#pagetop">Home</a>
+                    </li>
+                    <li class="">
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li class="">
+                        <a class="page-scroll" href="#team" >Team</a>
+                    </li>
+                    <li class="">
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                    <li class="">
+                        <a class="page-scroll" href="#" data-toggle="modal" data-target="#login">Admin Login</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+<a href="#" class="pull-right btn sub1" data-toggle="modal" data-target="#myModal "
+style="position: absolute;top: 50%;left: 20%"><span class="title1"><b style="color: #03a9f4;">Login</b></span></a>
+<a href="#" class="pull-right btn sub1" data-toggle="modal" data-target="#myModal1" style="position: absolute;top: 50%;left: 10%;"><span class="title1"><b style="color: #03a9f4;">SignUp</b></span></a>
 <!--sign in modal start-->
 <div class="modal fade" id="myModal">
   <div class="modal-dialog">
     <div class="modal-content title1">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title title1"><span style="color:orange">Log In</span></h4>
+        <h4 class="modal-title title1"><span style="color:#03a9f4">Log In</span></h4>
       </div>
       <div class="modal-body">
         <form class="form-horizontal" action="login.php?q=index.php" method="POST">
@@ -66,8 +104,9 @@ var b = document.forms["form"]["cpassword"].value;if (a!=b){alert("Passwords mus
 
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="submit" class="btn btn-primary">Log in</button>
+        <!--<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>-->
+        <button type="submit" class="btn btn-primary" style="background-color: #03a9f4;background-image:none;">Log in</button>
+      </div>
 		</fieldset>
 </form>
       </div>
@@ -76,16 +115,17 @@ var b = document.forms["form"]["cpassword"].value;if (a!=b){alert("Passwords mus
 </div><!-- /.modal -->
 <!--sign in modal closed-->
 
-</div><!--header row closed-->
-</div>
 
-<div class="bg1">
-<div class="row">
-
-<div class="col-md-7"></div>
-<div class="col-md-4 panel">
-<!-- sign in form begins -->  
-  <form class="form-horizontal" name="form" action="sign.php?q=account.php" onSubmit="return validateForm()" method="POST">
+<!--sign up modal start-->
+<div class="modal fade" id="myModal1">
+  <div class="modal-dialog">
+    <div class="modal-content title1">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title title1"><span style="color:#03a9f4">Sign Up</span></h4>
+      </div>
+      <div class="modal-body">
+        <form class="form-horizontal" name="form" action="sign.php?q=account.php" onSubmit="return validateForm()" method="POST">
 <fieldset>
 
 
@@ -155,59 +195,47 @@ var b = document.forms["form"]["cpassword"].value;if (a!=b){alert("Passwords mus
   </div>
 </div>
 <?php if(@$_GET['q7'])
+{ echo"<script >
+    $(document).ready(function(){
+        $('#myModal1').modal('show');
+    });
+</script>";}?>
+<?php if(@$_GET['q7'])
 { echo'<p style="color:red;font-size:15px;">'.@$_GET['q7'];}?>
 <!-- Button -->
 <div class="form-group">
   <label class="col-md-12 control-label" for=""></label>
   <div class="col-md-12"> 
-    <input  type="submit" class="sub" value="sign up" class="btn btn-primary"/>
+
+    <input  type="submit" class="pull-right btn sub1" value="Sign up" style="color: #03a9f4;font-weight: 400;font-size: 20px;padding-bottom: 35px;" />
   </div>
 </div>
 
 </fieldset>
 </form>
-</div><!--col-md-6 end-->
-</div></div>
-</div><!--container end-->
 
-<!--Footer start-->
-<div class="row footer">
-<div class="col-md-3 box">
-<a href="#" >About us</a>
-</div>
-<div class="col-md-3 box">
-<a href="#" data-toggle="modal" data-target="#login">Admin Login</a></div>
-<div class="col-md-3 box">
-<a href="#" data-toggle="modal" data-target="#developers">Developers</a>
-</div>
-<div class="col-md-3 box">
-<a href="feedback.php" target="_blank">Feedback</a></div></div>
-<!-- Modal For Developers-->
-<div class="modal fade title1" id="developers">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-        <h4 class="modal-title" style="font-family:'typo' "><span style="color:orange">Developers</span></h4>
       </div>
-	  
-      <div class="modal-body">
-        <p>
-		<div class="row">
-		<div class="col-md-4">
-		 <img src="" width=100 height=100 alt="fiem logo" class="img-rounded">
-		 </div>
-		 <div class="col-md-5">
-		<h4 style="font-family:'typo' ">Pawan Kumar Shaw</h4>
-		<h4 style="font-family:'typo' ">Angooj Kumar Singh</h4>
-		<h4 style="font-family:'typo' ">Jewel Chakraborty</h4>
-		<h4 style="font-family:'typo' ">Snahanjan Chatterjee</h4></div></div>
-		</p>
-      </div>
-    
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
+<!--sign in modal closed-->
+
+</div><!--header row closed-->
+</div>
+
+<div class="bg1">
+<div class="row">
+
+
+
+<!-- sign in form begins -->  
+  
+<!--col-md-6 end-->
+</div></div>
+</div><!--container end-->
+
+
+
 
 <!--Modal for admin login-->
 	 <div class="modal fade" id="login">
@@ -215,7 +243,7 @@ var b = document.forms["form"]["cpassword"].value;if (a!=b){alert("Passwords mus
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-        <h4 class="modal-title"><span style="color:orange;font-family:'typo' ">LOGIN</span></h4>
+        <h4 class="modal-title"><span style="color:#03a9f4;font-family:'typo' ">LOGIN</span></h4>
       </div>
       <div class="modal-body title1">
 <div class="row">
@@ -243,5 +271,267 @@ var b = document.forms["form"]["cpassword"].value;if (a!=b){alert("Passwords mus
 <!--footer end-->
 
 
+
+ <section id="about" style="padding-bottom:0px; margin-bottom:20px">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading" style="padding-bottom: 50px;padding-top: -50px;">How it Works</h2>
+                   
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="timeline">
+                        <li>
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/1.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>2009-2011</h4>
+                                    <h4 class="subheading">Our Humble Beginnings</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">During our college life we had participated in various coding hackathons and won a few as well!Finally we started our startup after graduation.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/2.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>March 2013</h4>
+                                    <h4 class="subheading">An Agency is Born</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">After 2 years of hardwork, we got our first client - FoodKart Corporation, India in 2013.We had to make a food delivery website.By then we had only made portfolios for different businesses.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/3.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>December 2015</h4>
+                                    <h4 class="subheading">Transition to Full Service</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">We now could pride in building strategic long–term client relationships. Over 97% of their revenues came from existing customers.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/4.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>July 2016</h4>
+                                    <h4 class="subheading">Phase Two Expansion</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">From last few years, we started shifting our operations to United States and some of the other countries in the world.On July 2016, our registered office was moved to Bangalore.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <h4>Be Part
+                                    <br>Of Our
+                                    <br>Story!</h4>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section id="team" style="margin-top:50px; text-align:center;">
+  <div class="container">
+                    <div class="row">
+                        <div class="heading-title text-center">
+                            <h2 class="section-heading" >Our Team </h2>
+                           
+                        </div>
+
+                        <div class="col-md-3 col-sm-3">
+                            <div class="team-member">
+                                <div class="team-img">
+                                    <img src="image/Pawan.jpg" alt="team member" class="img-responsive" style="border:2px solid #fff; border-radius:50%;">
+                                </div>
+                                <div class="team-hover">
+                                    <div class="desk">
+                                        <h4>Hi There !</h4>
+                                        <p>I love to introduce myself as a hardcore Web Designer.</p>
+                                    </div>
+                                    <div class="s-link">
+                                        <a href="#"><i class="fa fa-facebook"></i></a>
+                                        <a href="#"><i class="fa fa-twitter"></i></a>
+                                        <a href="#"><i class="fa fa-google-plus"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="team-title">
+                                <h5><a href="https://github.com/pawanshaw12" target="_blank">Pawan Kumar Shaw</a></h5>
+                                <span>CSE 4th Year</span>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-3">
+                            <div class="team-member">
+                                <div class="team-img">
+                                    <img src="image/Snehanjan.jpg" alt="team member" class="img-responsive" style="border:2px solid #fff; border-radius:50%;">
+                                </div>
+                                <div class="team-hover">
+                                    <div class="desk">
+                                        <h4>Hello World</h4>
+                                        <p>I love to introduce myself as a hardcore Web Designer.</p>
+                                    </div>
+                                    <div class="s-link">
+                                        <a href="#"><i class="fa fa-facebook"></i></a>
+                                        <a href="#"><i class="fa fa-twitter"></i></a>
+                                        <a href="#"><i class="fa fa-google-plus"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="team-title">
+                                <h5><a href="https://github.com/SnehanjanChatterjee" target="_blank">Snehanjan Chatterjee</a></h5>
+                                <span>CSE 4th Year</span>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-3">
+                            <div class="team-member">
+                                <div class="team-img">
+                                    <img src="image/Jewel.jpg"  alt="team member" class="img-responsive" style="border:2px solid #fff; border-radius:50%;">
+                                </div>
+                                <div class="team-hover">
+                                    <div class="desk">
+                                        <h4>I love to design</h4>
+                                        <p>I love to introduce myself as a hardcore Web Designer.</p>
+                                    </div>
+                                    <div class="s-link">
+                                        <a href="#"><i class="fa fa-facebook"></i></a>
+                                        <a href="#"><i class="fa fa-twitter"></i></a>
+                                        <a href="#"><i class="fa fa-google-plus"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="team-title">
+                               <h5><a href="https://github.com/Jewel-Chakraborty" target="_blank">Jewel Chakraborty</a></h5>
+                                <span>CSE 4th Year</span>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-3">
+                            <div class="team-member">
+                                <div class="team-img">
+                                    <img src="image/Angooj.jpg" alt="team member" class="img-responsive" style="border:2px solid #fff; border-radius:50%;">
+                                </div>
+                                <div class="team-hover">
+                                    <div class="desk">
+                                        <h4>I love to design</h4>
+                                        <p>I love to introduce myself as a hardcore Web Designer.</p>
+                                    </div>
+                                    <div class="s-link">
+                                        <a href="#"><i class="fa fa-facebook"></i></a>
+                                        <a href="#"><i class="fa fa-twitter"></i></a>
+                                        <a href="#"><i class="fa fa-google-plus"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="team-title">
+                               <h5><a href="https://github.com/angooj" target="_blank">Angooj Kumar Singh</a></h5>
+                                <span>CSE 4th Year</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+</section>
+
+
+
+
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12  text-center">
+                    <h2 class="section-heading">Contact Us</h2>
+                    
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <form name="sentMessage" id="contactForm" novalidate="">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Your Name *" id="name" required="" data-validation-required-message="Please enter your name.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="Your Email *" id="email" required="" data-validation-required-message="Please enter your email address.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    <input type="tel" class="form-control" placeholder="Your Phone *" id="phone" required="" data-validation-required-message="Please enter your phone number.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <textarea class="form-control" placeholder="Your Message *" id="message" required="" data-validation-required-message="Please enter a message."></textarea>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="col-lg-12 text-center">
+                                <div id="success"></div>
+                                <button type="submit" class="btn btn-xl" style="background-color:#0277bd;color:white ;">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+     <footer>
+        <div class="container">
+            <div class="row">
+              
+                    <span class="copyright" style="align: center;">Copyright &copy;Online Examination System 2020</span>
+                
+                <!--<div class="col-md-4">
+                    <ul class="list-inline social-buttons">
+                        <li><a href="#"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline quicklinks">
+                        <li><a href="#">Privacy Policy</a>
+                        </li>
+                        <li><a href="#">Terms of Use</a>
+                        </li>
+                    </ul>
+                </div>-->
+            </div>
+        </div>
+    </footer>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js'></script></script>
+<script src="js/main.js"></script>
 </body>
 </html>
