@@ -26,7 +26,19 @@ var b = document.forms["form"]["cpassword"].value;if (a!=b){alert("Passwords mus
 </head>
 
 <body id="pagetop">
- 
+ <?php
+session_start();
+if(isset($_SESSION["email"])){
+  if ($_SESSION["name"] == 'Admin') {
+    header("location:dash.php?q=0");
+  }
+  else
+header("location:account.php?q=1");
+}
+
+
+
+?>
 <nav class="navbar navbar-default navbar-fixed-top navbar-shrink">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -223,7 +235,7 @@ style="position: absolute;top: 50%;left: 20%"><span class="title1"><b style="col
 </div><!--header row closed-->
 </div>
 
-<div class="bg1">
+<div class=" bg1 img-responsive">
 <div class="row">
 
 
