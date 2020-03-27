@@ -31,7 +31,9 @@ var b = document.forms["form"]["cpassword"].value;if (a!=b){alert("Passwords mus
 <div class="col-lg-6">
 <span class="logo">Online Examination System</span></div>
 <div class="col-md-2 col-md-offset-4">
-<a href="#" class="pull-right btn sub1" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-log-in" aria-hidden="true"></span>&nbsp;<span class="title1"><b>Signin</b></span></a></div>
+<a href="#" class="pull-right btn sub1" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-log-in" aria-hidden="true"></span>&nbsp;<span class="title1"><b>Signin</b></span></a>
+<a href="#" class="pull-right btn sub1" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-log-in" aria-hidden="true"></span>&nbsp;<span class="title1"><b>Signup</b></span></a>
+</div>
 <!--sign in modal start-->
 <div class="modal fade" id="myModal">
   <div class="modal-dialog">
@@ -68,6 +70,7 @@ var b = document.forms["form"]["cpassword"].value;if (a!=b){alert("Passwords mus
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         <button type="submit" class="btn btn-primary">Log in</button>
+      </div>
 		</fieldset>
 </form>
       </div>
