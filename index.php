@@ -26,7 +26,19 @@ var b = document.forms["form"]["cpassword"].value;if (a!=b){alert("Passwords mus
 </head>
 
 <body id="pagetop">
- 
+ <?php
+session_start();
+if(isset($_SESSION["email"])){
+  if ($_SESSION["name"] == 'Admin') {
+    header("location:dash.php?q=0");
+  }
+  else
+header("location:account.php?q=1");
+}
+
+
+
+?>
 <nav class="navbar navbar-default navbar-fixed-top navbar-shrink">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -67,7 +79,7 @@ var b = document.forms["form"]["cpassword"].value;if (a!=b){alert("Passwords mus
         </div>
         <!-- /.container-fluid -->
     </nav>
-<a href="#" class="pull-right btn sub1" data-toggle="modal" data-target="#myModal "
+<a href="#" class="pull-right btn sub1" data-toggle="modal" data-target="#myModal"
 style="position: absolute;top: 50%;left: 20%"><span class="title1"><b style="color: #03a9f4;">Login</b></span></a>
 <a href="#" class="pull-right btn sub1" data-toggle="modal" data-target="#myModal1" style="position: absolute;top: 50%;left: 10%;"><span class="title1"><b style="color: #03a9f4;">SignUp</b></span></a>
 <!--sign in modal start-->
@@ -223,7 +235,7 @@ style="position: absolute;top: 50%;left: 20%"><span class="title1"><b style="col
 </div><!--header row closed-->
 </div>
 
-<div class="bg1">
+<div class=" bg1 img-responsive">
 <div class="row">
 
 
@@ -335,7 +347,7 @@ style="position: absolute;top: 50%;left: 20%"><span class="title1"><b style="col
                                     <h4 class="subheading">Phase Two Expansion</h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p class="text-muted">From last few years, we started shifting our operations to United States and some of the other countries in the world.On July 2016, our registered office was moved to Bangalore.</p>
+                                    <p class="text-muted">From the last few years, we started shifting our operations to United States and some of the other countries in the world.On July 2016, our registered office was moved to Bangalore.</p>
                                 </div>
                             </div>
                         </li>
@@ -363,7 +375,7 @@ style="position: absolute;top: 50%;left: 20%"><span class="title1"><b style="col
                         <div class="col-md-3 col-sm-3">
                             <div class="team-member">
                                 <div class="team-img">
-                                    <img src="image/Pawan.jpg" alt="team member" class="img-responsive" style="border:2px solid #fff; border-radius:50%;">
+                                    <img src="image/Pawan.jpg" alt="team member" class="img-responsive" style="border-radius:50%;">
                                 </div>
                                 <div class="team-hover">
                                     <div class="desk">
@@ -385,7 +397,7 @@ style="position: absolute;top: 50%;left: 20%"><span class="title1"><b style="col
                         <div class="col-md-3 col-sm-3">
                             <div class="team-member">
                                 <div class="team-img">
-                                    <img src="image/Snehanjan.jpg" alt="team member" class="img-responsive" style="border:2px solid #fff; border-radius:50%;">
+                                    <img src="image/Snehanjan.jpg" alt="team member" class="img-responsive" style="border-radius:50%;">
                                 </div>
                                 <div class="team-hover">
                                     <div class="desk">
@@ -407,7 +419,7 @@ style="position: absolute;top: 50%;left: 20%"><span class="title1"><b style="col
                         <div class="col-md-3 col-sm-3">
                             <div class="team-member">
                                 <div class="team-img">
-                                    <img src="image/Jewel.jpg"  alt="team member" class="img-responsive" style="border:2px solid #fff; border-radius:50%;">
+                                    <img src="image/Jewel.jpg"  alt="team member" class="img-responsive" style="border-radius:50%;">
                                 </div>
                                 <div class="team-hover">
                                     <div class="desk">
@@ -429,7 +441,7 @@ style="position: absolute;top: 50%;left: 20%"><span class="title1"><b style="col
                         <div class="col-md-3 col-sm-3">
                             <div class="team-member">
                                 <div class="team-img">
-                                    <img src="image/Angooj.jpg" alt="team member" class="img-responsive" style="border:2px solid #fff; border-radius:50%;">
+                                    <img src="image/Angooj.jpg" alt="team member" class="img-responsive" style="border-radius:50%;">
                                 </div>
                                 <div class="team-hover">
                                     <div class="desk">
@@ -457,7 +469,7 @@ style="position: absolute;top: 50%;left: 20%"><span class="title1"><b style="col
 
 
 
-    <section id="contact">
+<section id="contact">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12  text-center">
