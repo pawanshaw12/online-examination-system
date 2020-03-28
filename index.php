@@ -79,7 +79,9 @@ header("location:account.php?q=1");
         </div>
         <!-- /.container-fluid -->
     </nav>
-<a href="#" class="pull-right btn sub1" data-toggle="modal" data-target="#myModal "
+
+<a href="#" class="pull-right btn sub1" data-toggle="modal" data-target="#myModal"
+
 style="position: absolute;top: 50%;left: 20%"><span class="title1"><b style="color: #03a9f4;">Login</b></span></a>
 <a href="#" class="pull-right btn sub1" data-toggle="modal" data-target="#myModal1" style="position: absolute;top: 50%;left: 10%;"><span class="title1"><b style="color: #03a9f4;">SignUp</b></span></a>
 <!--sign in modal start-->
@@ -284,7 +286,10 @@ style="position: absolute;top: 50%;left: 20%"><span class="title1"><b style="col
 
 
 
- <section id="about">
+
+ <section id="about" style="padding-bottom:0px; margin-bottom:20px">
+
+
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -305,7 +310,9 @@ style="position: absolute;top: 50%;left: 20%"><span class="title1"><b style="col
                                     <h4 class="subheading">Our Humble Beginnings</h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+
+                                    <p class="text-muted">During our college life we had participated in various coding hackathons and won a few as well!Finally we started our startup after graduation.</p>
+
                                 </div>
                             </div>
                         </li>
@@ -315,11 +322,13 @@ style="position: absolute;top: 50%;left: 20%"><span class="title1"><b style="col
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
-                                    <h4>March 2011</h4>
+
+                                    <h4>March 2013</h4>
                                     <h4 class="subheading">An Agency is Born</h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                    <p class="text-muted">After 2 years of hardwork, we got our first client - FoodKart Corporation, India in 2013.We had to make a food delivery website.By then we had only made portfolios for different businesses.</p>
+
                                 </div>
                             </div>
                         </li>
@@ -329,11 +338,13 @@ style="position: absolute;top: 50%;left: 20%"><span class="title1"><b style="col
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
-                                    <h4>December 2012</h4>
+
+                                    <h4>December 2015</h4>
                                     <h4 class="subheading">Transition to Full Service</h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                    <p class="text-muted">We now could pride in building strategic long–term client relationships. Over 97% of their revenues came from existing customers.</p>
+
                                 </div>
                             </div>
                         </li>
@@ -343,11 +354,13 @@ style="position: absolute;top: 50%;left: 20%"><span class="title1"><b style="col
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
-                                    <h4>July 2014</h4>
+
+                                    <h4>July 2016</h4>
                                     <h4 class="subheading">Phase Two Expansion</h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                    <p class="text-muted">From the last few years, we started shifting our operations to United States and some of the other countries in the world.On July 2016, our registered office was moved to Bangalore.</p>
+
                                 </div>
                             </div>
                         </li>
@@ -364,7 +377,10 @@ style="position: absolute;top: 50%;left: 20%"><span class="title1"><b style="col
         </div>
     </section>
 
-<section id="team">
+
+<section id="team" style="margin-top:50px; text-align:center;">
+
+
   <div class="container">
                     <div class="row">
                         <div class="heading-title text-center">
@@ -375,7 +391,9 @@ style="position: absolute;top: 50%;left: 20%"><span class="title1"><b style="col
                         <div class="col-md-3 col-sm-3">
                             <div class="team-member">
                                 <div class="team-img">
-                                    <img src="image/Pawan.jpg" alt="team member" class="img-responsive">
+
+                                    <img src="image/Pawan.jpg" alt="team member" class="img-responsive" style="border-radius:50%;">
+
                                 </div>
                                 <div class="team-hover">
                                     <div class="desk">
@@ -390,14 +408,18 @@ style="position: absolute;top: 50%;left: 20%"><span class="title1"><b style="col
                                 </div>
                             </div>
                             <div class="team-title">
-                                <h5>Pawan Kumar Shaw</h5>
+
+                                <h5><a href="https://github.com/pawanshaw12" target="_blank">Pawan Kumar Shaw</a></h5>
+
                                 <span>CSE 4th Year</span>
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-3">
                             <div class="team-member">
                                 <div class="team-img">
-                                    <img src="image/Snehanjan.jpg" alt="team member" class="img-responsive">
+
+                                    <img src="image/Snehanjan.jpg" alt="team member" class="img-responsive" style="border-radius:50%;">
+
                                 </div>
                                 <div class="team-hover">
                                     <div class="desk">
@@ -412,14 +434,19 @@ style="position: absolute;top: 50%;left: 20%"><span class="title1"><b style="col
                                 </div>
                             </div>
                             <div class="team-title">
-                                <h5>Snehanjan Chatterjee</h5>
+
+                                <h5><a href="https://github.com/SnehanjanChatterjee" target="_blank">Snehanjan Chatterjee</a></h5>
+
                                 <span>CSE 4th Year</span>
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-3">
                             <div class="team-member">
                                 <div class="team-img">
-                                    <img src="image/Jewel.jpg"  alt="team member" class="img-responsive">
+
+                                    <img src="image/Jewel.jpg"  alt="team member" class="img-responsive" style="border-radius:50%;">
+
+
                                 </div>
                                 <div class="team-hover">
                                     <div class="desk">
@@ -434,14 +461,18 @@ style="position: absolute;top: 50%;left: 20%"><span class="title1"><b style="col
                                 </div>
                             </div>
                             <div class="team-title">
-                               <h5>Jewel Chakraborty</h5>
+
+                               <h5><a href="https://github.com/Jewel-Chakraborty" target="_blank">Jewel Chakraborty</a></h5>
+
                                 <span>CSE 4th Year</span>
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-3">
                             <div class="team-member">
                                 <div class="team-img">
-                                    <img src="image/Angooj.jpg" alt="team member" class="img-responsive">
+
+                                    <img src="image/Angooj.jpg" alt="team member" class="img-responsive" style="border-radius:50%;">
+
                                 </div>
                                 <div class="team-hover">
                                     <div class="desk">
@@ -456,7 +487,9 @@ style="position: absolute;top: 50%;left: 20%"><span class="title1"><b style="col
                                 </div>
                             </div>
                             <div class="team-title">
-                               <h5>Angooj Kumar Singh</h5>
+
+                               <h5><a href="https://github.com/angooj" target="_blank">Angooj Kumar Singh</a></h5>
+
                                 <span>CSE 4th Year</span>
                             </div>
                         </div>
@@ -469,7 +502,9 @@ style="position: absolute;top: 50%;left: 20%"><span class="title1"><b style="col
 
 
 
-    <section id="contact">
+
+<section id="contact">
+
         <div class="container">
             <div class="row">
                 <div class="col-lg-12  text-center">
@@ -481,7 +516,9 @@ style="position: absolute;top: 50%;left: 20%"><span class="title1"><b style="col
                 <div class="col-lg-12">
                     <form name="sentMessage" id="contactForm" novalidate="">
                         <div class="row">
-                            <div class="col-md-6">
+
+                            <div class="col-lg-12">
+
                                 <div class="form-group">
                                     <input type="text" class="form-control" placeholder="Your Name *" id="name" required="" data-validation-required-message="Please enter your name.">
                                     <p class="help-block text-danger"></p>
@@ -495,7 +532,11 @@ style="position: absolute;top: 50%;left: 20%"><span class="title1"><b style="col
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
-                            <div class="col-md-6">
+
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+
                                 <div class="form-group">
                                     <textarea class="form-control" placeholder="Your Message *" id="message" required="" data-validation-required-message="Please enter a message."></textarea>
                                     <p class="help-block text-danger"></p>
@@ -516,7 +557,9 @@ style="position: absolute;top: 50%;left: 20%"><span class="title1"><b style="col
         <div class="container">
             <div class="row">
               
-                    <span class="copyright" style="align: center;">Copyright ©Online Examination System 2020</span>
+
+                    <span class="copyright" style="align: center;">Copyright &copy;Online Examination System 2020</span>
+
                 
                 <!--<div class="col-md-4">
                     <ul class="list-inline social-buttons">

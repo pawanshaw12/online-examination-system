@@ -492,6 +492,9 @@ section#contact .form-group {
 section#contact .form-group input,
 section#contact .form-group textarea {
     padding: 20px;
+
+    width: 600px;
+    margin: auto;
 }
 
 section#contact .form-group input.form-control {
