@@ -306,12 +306,12 @@ style="position: absolute;top: 50%;left: 20%"><span class="title1"><b style="col
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
-                                    <h4>2009-2011</h4>
-                                    <h4 class="subheading">Our Humble Beginnings</h4>
+                                    <h4>Admin Login</h4>
+                                    <h4 class="subheading">Create quiz, see users' details, ranking</h4>
                                 </div>
                                 <div class="timeline-body">
 
-                                    <p class="text-muted">During our college life we had participated in various coding hackathons and won a few as well!Finally we started our startup after graduation.</p>
+                                    <p class="text-muted">Admin can login and check the users who have signed up for the contest. Admin can add quizes.They can also check global ranking.</p>
 
                                 </div>
                             </div>
@@ -323,11 +323,11 @@ style="position: absolute;top: 50%;left: 20%"><span class="title1"><b style="col
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
 
-                                    <h4>March 2013</h4>
-                                    <h4 class="subheading">An Agency is Born</h4>
+                                    <h4>Admin Create Quiz</h4>
+                                    <h4 class="subheading">Add,delete,update questions</h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p class="text-muted">After 2 years of hardwork, we got our first client - FoodKart Corporation, India in 2013.We had to make a food delivery website.By then we had only made portfolios for different businesses.</p>
+                                    <p class="text-muted">Admin can update questions of quizes.</p>
 
                                 </div>
                             </div>
@@ -339,11 +339,11 @@ style="position: absolute;top: 50%;left: 20%"><span class="title1"><b style="col
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
 
-                                    <h4>December 2015</h4>
-                                    <h4 class="subheading">Transition to Full Service</h4>
+                                    <h4>Candidate Registration</h4>
+                                    <h4 class="subheading">User signup, login, signout.</h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p class="text-muted">We now could pride in building strategic long–term client relationships. Over 97% of their revenues came from existing customers.</p>
+                                    <p class="text-muted">User can create a new profile, login to a previous one and can signout from their profile.</p>
 
                                 </div>
                             </div>
@@ -355,20 +355,20 @@ style="position: absolute;top: 50%;left: 20%"><span class="title1"><b style="col
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
 
-                                    <h4>July 2016</h4>
-                                    <h4 class="subheading">Phase Two Expansion</h4>
+                                    <h4>Candidate give test</h4>
+                                    <h4 class="subheading">Give test,check already given test,check ranking.</h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p class="text-muted">From the last few years, we started shifting our operations to United States and some of the other countries in the world.On July 2016, our registered office was moved to Bangalore.</p>
+                                    <p class="text-muted">Candidate can give test set by admin, view details of their tests and also vire ranking.</p>
 
                                 </div>
                             </div>
                         </li>
                         <li class="timeline-inverted">
                             <div class="timeline-image">
-                                <h4>Be Part
-                                    <br>Of Our
-                                    <br>Story!</h4>
+                                <h4>Check
+                                    <br>Your
+                                    <br>Result!</h4>
                             </div>
                         </li>
                     </ul>
